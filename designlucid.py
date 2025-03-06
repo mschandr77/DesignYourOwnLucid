@@ -139,17 +139,3 @@ def airModel():
     print("Your Lucid Air Sapphire model currently has the total cost of :$" + ccpAS + ".")
 
 airModel()
-def gravityModel():
-    gravityColors = input("Please select one color from the six available options.")
-    if gravityColors == "Abyss Black":
-        baseGravity = 0
-    elif gravityColors == "Stellar White Metallic":
-        baseGravity = 1000
-    elif gravityColors == "Aurora Green Metallic":
-        baseGravity = 1000
-    elif gravityColors == "Quantam Grey Metallic":
-        baseGravity = 1000
-    elif gravityColors == "Supernova Bronze Metallic":
-        baseGravity = 1000
-    elif gravityColors == "Lunar Titanium Metallic":
-        baseGravity = 1000
