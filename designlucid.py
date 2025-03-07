@@ -151,4 +151,4 @@ def airModel():
     print("Your Lucid Air Grand Touring model currently has the total cost of :$ " + str(ccpGT) + ".")
     print("Your Lucid Air Sapphire model currently has the total cost of :$" + str(ccpAS) + ".")
 
-airModel()
+print(airModel())
