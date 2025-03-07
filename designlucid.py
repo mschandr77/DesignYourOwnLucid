@@ -3,19 +3,23 @@ def airModel():
     userModel = input("What trim of the Lucid Air will you be purchasing today?")
     if userModel == "Air Pure":
         airPure = 69900
-        print("Your air pure model of your chosen trim currently costs: " + airPure + ".")
+        print("Your air pure model of your chosen trim currently costs: " + str(airPure) + ".")
     elif userModel == "Air Touring":
         airTouring = 78900
-        print("Your air touring model of your chosen trim currently costs: " + airTouring + ".")
+        print("Your air touring model of your chosen trim currently costs: " + str(airTouring) + ".")
     elif userModel == "Air Grand Touring":
         air_grand_touring = 110900
-        print("Your air grand touring model of your chosen trim currently costs: " + air_grand_touring + ".")
+        print("Your air grand touring model of your chosen trim currently costs: " + str(air_grand_touring) + ".")
     elif userModel == "Air Sapphire":
         airSapphire = 249000
-        print("Your air sapphire model of your chosen trim currently costs: " + airSapphire + ".")
+        print("Your air sapphire model of your chosen trim currently costs: " + str(airSapphire) + ".")
     else:
         print("Enter a valid trim for your Lucid Air model.")
     selectColor = input("What preferred color would you like, for your car,from the following options: Stellar White Metallic, Infinite Black Metallic, Cosmos Silver Metallic, Quantam Grey Metallic, Zenith Red Metallic, or Fanthom Blue Metallic")
+    airPure = 0
+    airTouring = 0
+    air_grand_touring = 0
+    airSapphire = 0
     if selectColor == "Stellar White Metallic":
         swmPure = airPure + 0
         swmTouring = airTouring + 0
@@ -49,6 +53,9 @@ def airModel():
     else:
         print("Choose from one of six potential color palettes.")
     chosenAppearance = input("Choose either the base appearance or purchase the premium appearance.")
+    airTouring = 0
+    air_grand_touring = 0
+    airSapphire = 0
     if chosenAppearance == "Platinum with Aluminum Roof":
         parPure = airPure + 0
         parTouring = airTouring + 0
@@ -73,7 +80,11 @@ def airModel():
     else:
         print("Please choose either the base 19'' Aero Range set of wheels or the 20'' Aero Lite (RWD) Version set of wheels.")
     chosenInterior = input("Please choose either the Mojave PurLuxe Leather Alternative or Santa Cruz Leather interior option.")
-    if chosenInterior == "Mojave PurLuxe Leather Alternative":
+    tarPure = 0
+    tarTouring = 0
+    tarGT = 0
+    tarAS = 0
+    if chosenInterior == "Mojave Purluxe Leather Alternative":
         mojavePure = tarPure + 0
         mojaveTouring = tarTouring + 0
         mojaveGT = tarGT + 0
@@ -100,6 +111,8 @@ def airModel():
     else:
         print("Please choose either the DreamDrive Premium driver assistance system or the advanced DreamDrive Pro driver assistance system.")
     secondFeature = input("Please choose either the included Surreal Sound system or the premium Surreal Sound Pro system.")
+    dasPure = 0
+    dasTouring = 0
     if secondFeature == "Surreal Sound":
         ssPure = dasPure + 0
         ssTouring = dasTouring + 0
@@ -133,9 +146,9 @@ def airModel():
         ccpAS = seatingAS + 2500
     else:
         print("Please select a preference for the Comfort and Convenience Package")
-    print("Your Lucid Air Pure model currently has the total cost of:$ " + ccpPure + ".")
-    print("Your Lucid Air Touring model currently has the total cost of:$ " + ccpTouring + ".")
-    print("Your Lucid Air Grand Touring model currently has the total cost of :$ " + ccpGT + ".")
-    print("Your Lucid Air Sapphire model currently has the total cost of :$" + ccpAS + ".")
+    print("Your Lucid Air Pure model currently has the total cost of:$ " + str(ccpPure) + ".")
+    print("Your Lucid Air Touring model currently has the total cost of:$ " + str(ccpTouring) + ".")
+    print("Your Lucid Air Grand Touring model currently has the total cost of :$ " + str(ccpGT) + ".")
+    print("Your Lucid Air Sapphire model currently has the total cost of :$" + str(ccpAS) + ".")
 
 airModel()
